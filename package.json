@@ -4,7 +4,8 @@
   "description": "A simple system for search isad musics",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "./node_modules/.bin/eslint src/*.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,14 @@
   "bugs": {
     "url": "https://github.com/RenatoRJF/iasd-musics/issues"
   },
-  "homepage": "https://github.com/RenatoRJF/iasd-musics#readme"
+  "homepage": "https://github.com/RenatoRJF/iasd-musics#readme",
+  "dependencies": {
+    "eslint": "^4.18.2"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0"
+  }
 }
