@@ -1,0 +1,24 @@
+{
+  "name": "iasd-musics",
+  "version": "1.0.0",
+  "description": "A simple system for search isad musics",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RenatoRJF/iasd-musics.git"
+  },
+  "keywords": [
+    "iasd",
+    "js",
+    "react"
+  ],
+  "author": "Renato Ferreira <nato.rjf@gmail.com> (https://renatorjf.github.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RenatoRJF/iasd-musics/issues"
+  },
+  "homepage": "https://github.com/RenatoRJF/iasd-musics#readme"
+}
