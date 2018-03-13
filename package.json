@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "./node_modules/.bin/eslint src/*.js"
+    "lint": "./node_modules/.bin/eslint src/*.js",
+    "prepush": "npm run lint"
   },
   "repository": {
     "type": "git",
@@ -23,7 +24,8 @@
   },
   "homepage": "https://github.com/RenatoRJF/iasd-musics#readme",
   "dependencies": {
-    "eslint": "^4.18.2"
+    "eslint": "^4.18.2",
+    "husky": "^0.14.3"
   },
   "devDependencies": {
     "eslint-config-airbnb": "^16.1.0",
