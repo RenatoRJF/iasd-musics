@@ -1,0 +1,13 @@
+// Modules and Variables
+@import "partials/base";
+
+// Partials
+@import "partials/reset";
+@import "partials/typography";
+
+body, html {
+  font-family: $fixed-font-family, $base-font-family;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+  line-height: $base-line-height;
+}
