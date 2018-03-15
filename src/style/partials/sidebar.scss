@@ -91,17 +91,25 @@
               @extend .link-style;
               padding: 6px 0;
 
-              i::before {
-                @extend .icon-style;
-                color: $base-theme-blue;
-                font-size: $icon-small-size;
-                // Transition
-                @include setTransition((color .5s));
+              i {
+                vertical-align: middle;
+
+                &::before {
+                  @extend .icon-style;
+                  color: $base-theme-blue;
+                  font-size: $icon-small-size;
+                  // Transition
+                  @include setTransition((color .5s));
+                }
               }
 
               &:hover {
                 @extend .active-menu-item;
                 opacity: .7;
+              }
+
+              &.active-menu-item {
+                @extend .active-menu-item;
               }
             }
           }

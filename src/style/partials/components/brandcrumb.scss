@@ -1,0 +1,24 @@
+.app-brandcrumb {
+  padding: 10px 0 0;
+
+  li {
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+
+    i {
+      font-size: $icon-medium-size;
+      vertical-align: middle;
+    }
+
+    a {
+      text-decoration: navajowhite;
+      color: $base-font-color;
+
+      &.actual-brandcrump {
+        color: $base-theme-brown;
+        font-weight: $bold;
+      }
+    }
+  }
+}

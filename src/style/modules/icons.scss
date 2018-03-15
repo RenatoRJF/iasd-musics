@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: 'app';
-  src:  url('#{$icomoon-font-path}/app.eot?ywovxk');
-  src:  url('#{$icomoon-font-path}/app.eot?ywovxk#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/app.ttf?ywovxk') format('truetype'),
-    url('#{$icomoon-font-path}/app.woff?ywovxk') format('woff'),
-    url('#{$icomoon-font-path}/app.svg?ywovxk#app') format('svg');
+  src:  url('#{$icomoon-font-path}/app.eot?ww597p');
+  src:  url('#{$icomoon-font-path}/app.eot?ww597p#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/app.ttf?ww597p') format('truetype'),
+    url('#{$icomoon-font-path}/app.woff?ww597p') format('woff'),
+    url('#{$icomoon-font-path}/app.svg?ww597p#app') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -30,6 +30,11 @@
   @return unquote("\"") + $str + unquote("\"");
 }
 
+.icon-keyboard_arrow_right {
+  &:before {
+    content: unicode($icon-keyboard_arrow_right);
+  }
+}
 .icon-cd {
   &:before {
     content: unicode($icon-cd);
@@ -75,4 +80,3 @@
     content: unicode($icon-vynil);
   }
 }
-
