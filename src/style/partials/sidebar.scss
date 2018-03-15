@@ -2,7 +2,7 @@
   color: $base-theme-lightgray;
   display: inline-block;
   font-size: $icon-medium-size;
-  margin: -3px 5px 0 0;
+  margin: 0 5px 0 0;
   text-indent: 0;
   vertical-align: middle;
 }
@@ -32,6 +32,15 @@
   i::before { color: $base-theme-yellow; }
 }
 
+.set-menu-transition {
+  @include setTransition((
+    background-color .3s,
+    color .2s,
+    opacity .2s,
+    font-weight .2s,
+  ));
+}
+
 .app-main__sidebar {
   background-color: $base-sidebar-background;
   width: $base-sidebar-width;
@@ -55,11 +64,14 @@
             background-color: $base-theme-white;
             padding: 7px;
             border: solid 1px rgba(0,0,0,0.3);
+            font-size: $icon-small-size;
           }
 
           &:hover {
             opacity: .9;
             @extend .active-menu-title;
+            // Transition
+            @extend .set-menu-transition;
           }
         }
 
@@ -79,10 +91,12 @@
               @extend .link-style;
               padding: 6px 0;
 
-              i {
+              i::before {
                 @extend .icon-style;
                 color: $base-theme-blue;
                 font-size: $icon-small-size;
+                // Transition
+                @include setTransition((color .5s));
               }
 
               &:hover {

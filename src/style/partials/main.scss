@@ -3,5 +3,5 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-  height: calc(100vh - #{$base-header-height});
+  height: calc(100vh - #{$base-header-height} - #{$footer-height});
 }

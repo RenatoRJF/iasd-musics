@@ -4,6 +4,10 @@ $base-theme-orange: #ed6c44;
 $base-theme-yellow: #ffb232;
 $base-theme-lightgray: rgba(0,0,0,0.4);
 $base-theme-blue: #4cc3c9;
+$base-theme-brown: #c3a277;
+$base-theme-lightbrown: rgb(245, 229, 208);
+
+$base-font-color: $base-theme-gray;
 
 $base-header-background: $base-theme-white;
 $base-content-background: #f8f3f0;
@@ -15,3 +19,5 @@ $base-icon-color: $base-theme-gray;
 $sidebar-menu-title-bg: rgba(0,0,0,0.05);
 $sidebar-menu-title-bg-active: $base-theme-blue;
 $sidebar-menu-title-acitve: $base-theme-white;
+
+$footer-background: $base-theme-lightbrown;

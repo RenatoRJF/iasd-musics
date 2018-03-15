@@ -19,6 +19,16 @@ const Sidebar = () => (
                 <i className="icon-cd" /> 2015 - Eu sou a mensagem
               </a>
             </li>
+            <li>
+              <a href="/">
+                <i className="icon-cd" /> 2015 - Eu sou a mensagem
+              </a>
+            </li>
+            <li>
+              <a href="/">
+                <i className="icon-cd" /> 2015 - Eu sou a mensagem
+              </a>
+            </li>
           </ul>
         </li>
 
