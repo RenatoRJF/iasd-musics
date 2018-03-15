@@ -1,0 +1,39 @@
+.app-header {
+  background-color: $base-header-background;
+  height: $base-header-height;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  .app-header__logo {
+    flex: 1;
+    background-color: $base-logo-background;
+    text-align: center;
+    width: 230px;
+    flex: 0 0 auto;
+
+    i {
+      color: $base-icon-color;
+      font-size: $base-logo-size;
+      line-height: $base-header-height;
+      vertical-align: middle;
+      display: inline-block;
+    }
+
+    h1 {
+      font-size: 16px;
+      color: $base-icon-color;
+      vertical-align: middle;
+      display: inline-block;
+      font-weight: $base-font-weight;
+      margin-left: 10px;
+    }
+  }
+
+  .app-header__right-side {
+    flex-grow: 1;
+    height: calc(#{$base-header-height} - 1px);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    padding-left: 50px;
+  }
+}

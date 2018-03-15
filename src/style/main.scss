@@ -1,13 +1,12 @@
 // Modules and Variables
-@import "partials/base";
+@import "./partials/base";
 
 // Partials
-@import "partials/reset";
-@import "partials/typography";
-
-body, html {
-  font-family: $fixed-font-family, $base-font-family;
-  font-size: $base-font-size;
-  font-weight: $base-font-weight;
-  line-height: $base-line-height;
-}
+@import "./partials/reset";
+@import "./partials/general";
+@import "./partials/typography";
+@import "./partials/header";
+@import "./partials/main";
+@import "./partials/sidebar";
+@import "./partials/content";
+@import "./partials/components/youtube-search";

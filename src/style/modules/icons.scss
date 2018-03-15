@@ -1,0 +1,55 @@
+@import "./icon-variables";
+
+@import "variables";
+
+@font-face {
+  font-family: 'app';
+  src:  url('#{$icomoon-font-path}/app.eot?gokx1x');
+  src:  url('#{$icomoon-font-path}/app.eot?gokx1x#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/app.ttf?gokx1x') format('truetype'),
+    url('#{$icomoon-font-path}/app.woff?gokx1x') format('woff'),
+    url('#{$icomoon-font-path}/app.svg?gokx1x#app') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'app' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@function unicode($str) {
+  @return unquote("\"") + $str + unquote("\"");
+}
+
+.icon-play {
+  &:before {
+    content: unicode($icon-play);
+  }
+}
+.icon-search {
+  &:before {
+    content: unicode($icon-search);
+  }
+}
+.icon-youtube {
+  &:before {
+    content: unicode($icon-youtube);
+  }
+}
+.icon-youtube2 {
+  &:before {
+    content: unicode($icon-youtube2);
+  }
+}
+

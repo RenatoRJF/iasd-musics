@@ -1,0 +1,10 @@
+body, html {
+  font-family: $fixed-font-family, $base-font-family;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+  line-height: $base-line-height;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  color: $base-icon-color;
+}
