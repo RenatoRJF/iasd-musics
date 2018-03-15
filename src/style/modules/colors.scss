@@ -1,9 +1,17 @@
-$base-white: #ffffff;
-$base-gray: #4c4743;
-$base-orange: #ed6c44;
+$base-theme-white: #ffffff;
+$base-theme-gray: #4c4743;
+$base-theme-orange: #ed6c44;
+$base-theme-yellow: #ffb232;
+$base-theme-lightgray: rgba(0,0,0,0.4);
+$base-theme-blue: #4cc3c9;
 
-$base-header-background: $base-white;
+$base-header-background: $base-theme-white;
 $base-content-background: #f8f3f0;
-$base-logo-background: $base-orange;
-$base-sidebar-background: $base-white;
-$base-icon-color: $base-white;
+$base-logo-background: $base-theme-orange;
+$base-logo-color: $base-theme-white;
+$base-sidebar-background: $base-theme-white;
+$base-icon-color: $base-theme-gray;
+
+$sidebar-menu-title-bg: rgba(0,0,0,0.05);
+$sidebar-menu-title-bg-active: $base-theme-blue;
+$sidebar-menu-title-acitve: $base-theme-white;

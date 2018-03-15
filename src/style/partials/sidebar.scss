@@ -1,6 +1,98 @@
+.icon-style {
+  color: $base-theme-lightgray;
+  display: inline-block;
+  font-size: $icon-medium-size;
+  margin: -3px 5px 0 0;
+  text-indent: 0;
+  vertical-align: middle;
+}
+
+.link-style {
+  color: $base-theme-gray;
+  display: block;
+  padding: 10px 0 8px;
+  text-decoration: none;
+}
+
+.active-menu-title {
+  font-weight: $bold;
+  color: $sidebar-menu-title-acitve;
+  background-color: $sidebar-menu-title-bg-active;
+
+  i::before {
+    border-color: transparent;
+    border-radius: 100%;
+    background-color: $base-theme-white;
+  }
+}
+
+.active-menu-item {
+  font-weight: $bold;
+
+  i::before { color: $base-theme-yellow; }
+}
+
 .app-main__sidebar {
   background-color: $base-sidebar-background;
-  width: 230px;
+  width: $base-sidebar-width;
   height: 100%;
   flex: 0 0 auto;
+
+  .sidebar-nav {
+    ul {
+      .sidebar-menu__group {
+        width: $base-sidebar-width;
+        text-indent: $sidebar-indent-level1;
+
+        .sidebar-menu__group-title {
+          @extend .link-style;
+          font-size: 14px;
+          background-color: $sidebar-menu-title-bg;
+
+          i::before {
+            @extend .icon-style;
+            border-radius: 100%;
+            background-color: $base-theme-white;
+            padding: 7px;
+            border: solid 1px rgba(0,0,0,0.3);
+          }
+
+          &:hover {
+            opacity: .9;
+            @extend .active-menu-title;
+          }
+        }
+
+        &.active-menu-group {
+          .sidebar-menu__group-title {
+            @extend .active-menu-title;
+          }
+        }
+
+        .menu__group-list {
+          margin: 10px 0;
+
+          li {
+            text-indent: $sidebar-indent-level2;
+
+            a {
+              @extend .link-style;
+              padding: 6px 0;
+
+              i {
+                @extend .icon-style;
+                color: $base-theme-blue;
+                font-size: $icon-small-size;
+              }
+
+              &:hover {
+                @extend .active-menu-item;
+                opacity: .7;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

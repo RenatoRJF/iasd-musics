@@ -9,11 +9,11 @@
     flex: 1;
     background-color: $base-logo-background;
     text-align: center;
-    width: 230px;
+    width: $base-sidebar-width;
     flex: 0 0 auto;
 
     i {
-      color: $base-icon-color;
+      color: $base-logo-color;
       font-size: $base-logo-size;
       line-height: $base-header-height;
       vertical-align: middle;
@@ -22,7 +22,7 @@
 
     h1 {
       font-size: 16px;
-      color: $base-icon-color;
+      color: $base-logo-color;
       vertical-align: middle;
       display: inline-block;
       font-weight: $base-font-weight;

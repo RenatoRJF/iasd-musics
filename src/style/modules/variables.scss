@@ -1,3 +1,29 @@
-$base-header-height: 60px;
+// Font weights
+$light: 100;
+$regular: 400;
+$bold: 600;
 
+// Base Font
+$base-font-family: 'Open Sans', sans-serif;
+$base-font-weight: $regular;
+$base-font-size: 13px;
+$base-line-height: 1.4;
+
+// Fixed Font
+$fixed-font-family: 'Open Sans';
+$fixed-font-size: 85%;
+$fixed-line-height: $base-line-height;
+
+// Icons
+$base-icon-size: 18px;
+$icon-small-size: 15px;
+$icon-medium-size: 20px;
+$icon-big-size: 25px;
+
+$base-header-height: 60px;
 $base-logo-size: 25px;
+
+// Sidebar
+$base-sidebar-width: 260px;
+$sidebar-indent-level1: 20px;
+$sidebar-indent-level2: 30px;

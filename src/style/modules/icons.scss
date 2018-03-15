@@ -1,14 +1,12 @@
 @import "./icon-variables";
 
-@import "variables";
-
 @font-face {
   font-family: 'app';
-  src:  url('#{$icomoon-font-path}/app.eot?gokx1x');
-  src:  url('#{$icomoon-font-path}/app.eot?gokx1x#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/app.ttf?gokx1x') format('truetype'),
-    url('#{$icomoon-font-path}/app.woff?gokx1x') format('woff'),
-    url('#{$icomoon-font-path}/app.svg?gokx1x#app') format('svg');
+  src:  url('#{$icomoon-font-path}/app.eot?fu6kl0');
+  src:  url('#{$icomoon-font-path}/app.eot?fu6kl0#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/app.ttf?fu6kl0') format('truetype'),
+    url('#{$icomoon-font-path}/app.woff?fu6kl0') format('woff'),
+    url('#{$icomoon-font-path}/app.svg?fu6kl0#app') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -32,9 +30,24 @@
   @return unquote("\"") + $str + unquote("\"");
 }
 
+.icon-cd {
+  &:before {
+    content: unicode($icon-cd);
+  }
+}
+.icon-disk {
+  &:before {
+    content: unicode($icon-disk);
+  }
+}
 .icon-play {
   &:before {
     content: unicode($icon-play);
+  }
+}
+.icon-file-music {
+  &:before {
+    content: unicode($icon-file-music);
   }
 }
 .icon-search {
@@ -50,6 +63,11 @@
 .icon-youtube2 {
   &:before {
     content: unicode($icon-youtube2);
+  }
+}
+.icon-vynil {
+  &:before {
+    content: unicode($icon-vynil);
   }
 }
 
