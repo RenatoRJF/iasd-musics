@@ -1,4 +1,5 @@
 import React from 'react';
+import YoutubeSearch from '../youtube-search/YoutubeSearch';
 
 const Header = () => (
   <header className="app-header">
@@ -8,15 +9,7 @@ const Header = () => (
     </div>
 
     <div className="app-header__right-side">
-      <div className="youtube-search">
-        <i className="icon-youtube2" />
-        <form>
-          <input type="text" placeholder="Search here..." />
-          <button>
-            <i className="icon-search" />
-          </button>
-        </form>
-      </div>
+      <YoutubeSearch />
     </div>
   </header>
 );

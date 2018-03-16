@@ -1,0 +1,19 @@
+.app-search {
+  margin: 15px 0;
+  width: 435px;
+
+  form > input[type="search"] {
+    width: 100%;
+    padding: 10px 10px 10px 0;
+    border: solid 1px $base-theme-lightbrown;
+    text-indent: 10px;
+    outline: none;
+    box-shadow: 0 1px 2px $sidebar-menu-title-bg;
+    @include setTransition((border-color .3s, box-shadow .3s));
+
+    &:focus {
+      border-color: $base-theme-brown;
+      box-shadow: 0 0 20px $base-theme-lightbrown;
+    }
+  }
+}

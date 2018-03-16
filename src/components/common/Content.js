@@ -1,10 +1,22 @@
 import React from 'react';
-import Brandcrumb from './Brandcrumb';
+import PropTypes from 'prop-types';
+import Brandcrumb from '../brandcrumb/Brandcrumb';
+import AppSearch from '../app-search/AppSearch';
 
-const Content = () => (
-  <section className="app-main__content">
-    <Brandcrumb />
-  </section>
-);
+function Content(props) {
+  const { children } = props;
+
+  return (
+    <section className="app-main__content">
+      <Brandcrumb />
+      <AppSearch />
+      {children}
+    </section>
+  );
+}
+
+Content.propTypes = {
+  children: PropTypes.element.isRequired,
+};
 
 export default Content;

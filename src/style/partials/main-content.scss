@@ -1,0 +1,4 @@
+.main-content {
+  background-color: $base-theme-white;
+  height: calc(100vh - #{$base-header-height} - #{$footer-height} - 98px);
+}

@@ -32,4 +32,8 @@ $sidebar-indent-level2: 30px;
 $footer-height: 41px;
 
 // Content
-$content-padding: 0 25px;
+$content-padding: 0 50px;
+$content-box-height: calc(100vh - #{$base-header-height} - #{$footer-height} - 98px);
+
+// Headings
+$h1: 25px;
