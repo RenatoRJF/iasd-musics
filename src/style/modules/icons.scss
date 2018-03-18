@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: 'app';
-  src:  url('#{$icomoon-font-path}/app.eot?ww597p');
-  src:  url('#{$icomoon-font-path}/app.eot?ww597p#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/app.ttf?ww597p') format('truetype'),
-    url('#{$icomoon-font-path}/app.woff?ww597p') format('woff'),
-    url('#{$icomoon-font-path}/app.svg?ww597p#app') format('svg');
+  src:  url('#{$icomoon-font-path}/app.eot?1lrczb');
+  src:  url('#{$icomoon-font-path}/app.eot?1lrczb#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/app.ttf?1lrczb') format('truetype'),
+    url('#{$icomoon-font-path}/app.woff?1lrczb') format('woff'),
+    url('#{$icomoon-font-path}/app.svg?1lrczb#app') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -45,6 +45,11 @@
     content: unicode($icon-disk);
   }
 }
+.icon-music {
+  &:before {
+    content: unicode($icon-music);
+  }
+}
 .icon-play {
   &:before {
     content: unicode($icon-play);
@@ -58,6 +63,11 @@
 .icon-search {
   &:before {
     content: unicode($icon-search);
+  }
+}
+.icon-play3 {
+  &:before {
+    content: unicode($icon-play3);
   }
 }
 .icon-youtube {

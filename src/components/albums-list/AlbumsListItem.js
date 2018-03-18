@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import AlbumsListItemCard from './AlbumsListItemCard';
+import AlbumsListItemMusics from './AlbumsListItemMusics';
 
 class AlbumsListItem extends React.Component {
   constructor(props) {
@@ -11,28 +12,34 @@ class AlbumsListItem extends React.Component {
   onClickHandler() {
     this.props.onClick(this.props.album);
   }
-  // Criar component mostrando o player com a lista de
+
+  setClass() {
+    return `albums__list-item ${this.props.albumSelected === this.props.album && 'album-selected'}`;
+  }
+
   render() {
+    const { albumSelected, album } = this.props;
+
+    const content = (albumSelected !== album) ? (
+      <AlbumsListItemCard
+        album={album}
+        onClick={this.onClickHandler}
+        role="presentation"
+      />
+    ) : (<AlbumsListItemMusics album={albumSelected} />);
+
     return (
-      <div className={`albums__list-item ${this.props.className}`}>
-        <AlbumsListItemCard
-          album={this.props.album}
-          onClick={this.onClickHandler}
-          role="presentation"
-        />
+      <div className={this.setClass(albumSelected, album)}>
+        {content}
       </div>
     );
   }
 }
 
 AlbumsListItem.propTypes = {
-  className: PropTypes.string,
-  onClick: PropTypes.func.isRequired,
+  albumSelected: PropTypes.shape({}).isRequired,
   album: PropTypes.shape({}).isRequired,
-};
-
-AlbumsListItem.defaultProps = {
-  className: '',
+  onClick: PropTypes.func.isRequired,
 };
 
 export default AlbumsListItem;

@@ -7,6 +7,7 @@ const albums = [
     title: 'Eu sou a mensagem',
     year: '2015',
     thumbnail: 'http://www.livrariaadventista.com.br/media/custom/blog/thumb-blog-1423161495.jpg',
+    url: 'https://www.youtube.com/watch?v=fKFlP5FIf48',
   },
   {
     id: 2222,
@@ -109,24 +110,41 @@ const albums = [
     title: 'Missão evangelismo jovem',
     year: '2001',
     thumbnail: 'https://studiosol-a.akamaihd.net/uploadfile/letras/albuns/e/9/a/b/535451474548665-tb_180.jpg',
-    selected: true,
   },
 ];
 
-const AlbumsList = () => (
-  <div className="albums">
-    <h1>Albuns</h1>
-    <div className="albums__list">
-      {albums.map(album => (
-        <AlbumsListItem
-          className={album.selected && 'album-selectd'}
-          key={album.id}
-          album={album}
-          onClick={(albumDetails) => { console.log(albumDetails); }}
-        />
-      ))}
-    </div>
-  </div>
-);
+class AlbumsList extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { album_seleted: {} };
+    this.onSelectAlbum = this.onSelectAlbum.bind(this);
+  }
+
+  onSelectAlbum(album) {
+    if (album === this.state.album_seleted) {
+      this.setState({ album_seleted: {} });
+      return;
+    }
+    this.setState({ album_seleted: album });
+  }
+
+  render() {
+    return (
+      <div className="albums">
+        <h1 className="title">Albuns</h1>
+        <div className="albums__list">
+          {albums.map(album => (
+            <AlbumsListItem
+              key={album.id}
+              album={album}
+              albumSelected={this.state.album_seleted}
+              onClick={this.onSelectAlbum}
+            />
+          ))}
+        </div>
+      </div>
+    );
+  }
+}
 
 export default AlbumsList;

@@ -13,12 +13,12 @@ class AlbumListItemCard extends React.Component {
 
   render() {
     return (
-      <div onClick={this.handlerClick} role="presentation">
-        <div className="albums__list-item__thumbnail">
+      <div className="album__list-item__card" onClick={this.handlerClick} role="presentation">
+        <div className="card__thumbnail">
           <img src={this.props.album.thumbnail} alt="thumbnail" />
         </div>
-        <span className="albums__list-item__year">{this.props.album.year && this.props.album.year}</span>
-        <h2 className="albums__list-item__title">{this.props.album.title}</h2>
+        <span className="card__year">{this.props.album.year && this.props.album.year}</span>
+        <h2 className="card__title">{this.props.album.title}</h2>
       </div>
     );
   }
