@@ -109,6 +109,7 @@ const albums = [
     title: 'Missão evangelismo jovem',
     year: '2001',
     thumbnail: 'https://studiosol-a.akamaihd.net/uploadfile/letras/albuns/e/9/a/b/535451474548665-tb_180.jpg',
+    selected: true,
   },
 ];
 
@@ -116,7 +117,14 @@ const AlbumsList = () => (
   <div className="albums">
     <h1>Albuns</h1>
     <div className="albums__list">
-      {albums.map(album => <AlbumsListItem key={album.id} album={album} />)}
+      {albums.map(album => (
+        <AlbumsListItem
+          className={album.selected && 'album-selectd'}
+          key={album.id}
+          album={album}
+          onClick={(albumDetails) => { console.log(albumDetails); }}
+        />
+      ))}
     </div>
   </div>
 );

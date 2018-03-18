@@ -34,6 +34,7 @@
     &.album-selected {
       grid-area: 1 / 5 / 4 / 1;
       height: 500px;
+      box-shadow: 2px 2px 8px $thumbnail-border;
     }
 
     .albums__list-item__thumbnail {
