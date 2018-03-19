@@ -26,7 +26,7 @@ class AlbumsListItem extends React.Component {
         onClick={this.onClickHandler}
         role="presentation"
       />
-    ) : (<AlbumsListItemMusics album={albumSelected} />);
+    ) : (<AlbumsListItemMusics album={albumSelected} onCloseAlbum={this.onClickHandler} />);
 
     return (
       <div className={this.setClass(albumSelected, album)}>

@@ -8,6 +8,33 @@ const albums = [
     year: '2015',
     thumbnail: 'http://www.livrariaadventista.com.br/media/custom/blog/thumb-blog-1423161495.jpg',
     url: 'https://www.youtube.com/watch?v=fKFlP5FIf48',
+    musics: [
+      {
+        id: 312312,
+        name: 'Pressa',
+        url: '',
+      },
+      {
+        id: 3123121,
+        name: 'A bíblia é',
+        url: 'Medley (Só em Jesus / A minha fé e o meu amor)',
+      },
+      {
+        id: 3123122,
+        name: 'Eu sou a mensagem',
+        url: '',
+      },
+      {
+        id: 3123123,
+        name: 'Dez mil razões',
+        url: '',
+      },
+      {
+        id: 3123124,
+        name: 'Coração aberto',
+        url: '',
+      },
+    ],
   },
   {
     id: 2222,

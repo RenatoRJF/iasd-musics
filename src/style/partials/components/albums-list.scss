@@ -33,8 +33,8 @@
 
     &.album-selected {
       grid-area: 1 / 4 / 4 / 1;
-      // height: 360px;
       box-shadow: 2px 2px 8px $thumbnail-border;
+      cursor: inherit;
     }
 
     .album__list-item__card {
@@ -65,6 +65,7 @@
       text-align: left;
       padding-left: 20px;
       padding-right: 20px;
+      position: relative;
 
       h1 {
         color: $base-theme-brown;
@@ -88,6 +89,72 @@
       .playing {
         color: $base-theme-blue;
         font-weight: $bold;
+        font-size: 20px;
+
+        span {
+          display: inline-block;
+          vertical-align: middle;
+          width: 20px;
+          height: 20px;
+          border-radius: 100%;
+          background-color: $base-theme-blue;
+          color: $base-theme-white;
+          text-align: center;
+          font-size: 14px;
+          line-height: 20px;
+          margin-top: -4px;
+        }
+      }
+
+      .musics-list {
+        margin-top: 5px;
+        padding: 10px 0;
+        display: grid;
+        grid: auto / repeat(3, 1fr);
+        grid-auto-flow: row;
+        grid-gap: 10px 8px;
+
+        .musics-list__music {
+          max-width: 160px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          font-weight: $regular;
+          border: 1px solid $thumbnail-border;
+          padding: 5px 0;
+          color: $base-theme-gray;
+          cursor: pointer;
+          box-shadow: 1px 1px 5px transparent;
+          @include setTransition((box-shadow .2s));
+
+          i {
+            display: inline-block;
+            width: 17px;
+            height: 17px;
+            border-radius: 100%;
+            background-color: $base-theme-lightgray;
+            color: $base-theme-white;
+            text-align: center;
+            line-height: 17px;
+            font-size: 10px;
+            margin-right: 5px;
+            @include setTransition((background-color .2s));
+          }
+
+          &:hover {
+            box-shadow: 1px 1px 5px $base-theme-lightgray;
+
+            i { background-color: $base-theme-blue; }
+          }
+        }
+      }
+
+      .icon-close {
+        position: absolute;
+        right: 20px;
+        top: 0;
+        cursor: pointer;
+        color: $base-theme-orange;
       }
     }
   }
@@ -96,4 +163,7 @@
 
 @media screen and (max-width: 1300px) {
   .albums__list { grid: auto / repeat(4, auto); }
+  .musics-list__music {
+    max-width: 180px !important;
+  }
 }

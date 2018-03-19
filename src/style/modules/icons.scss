@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: 'app';
-  src:  url('#{$icomoon-font-path}/app.eot?1lrczb');
-  src:  url('#{$icomoon-font-path}/app.eot?1lrczb#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/app.ttf?1lrczb') format('truetype'),
-    url('#{$icomoon-font-path}/app.woff?1lrczb') format('woff'),
-    url('#{$icomoon-font-path}/app.svg?1lrczb#app') format('svg');
+  src:  url('#{$icomoon-font-path}/app.eot?kut2bi');
+  src:  url('#{$icomoon-font-path}/app.eot?kut2bi#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/app.ttf?kut2bi') format('truetype'),
+    url('#{$icomoon-font-path}/app.woff?kut2bi') format('woff'),
+    url('#{$icomoon-font-path}/app.svg?kut2bi#app') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -63,6 +63,11 @@
 .icon-search {
   &:before {
     content: unicode($icon-search);
+  }
+}
+.icon-cross {
+  &:before {
+    content: unicode($icon-cross);
   }
 }
 .icon-play3 {
